@@ -35,3 +35,32 @@ span.small {
 #url #options input {
   margin-top: 5px;
 }
+#frames {
+  overflow-x: scroll;
+  width: 100%;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+.frame {
+  margin-right: 20px;
+  float: left;
+}
+.frame:last-child {
+  margin-right: 0;
+}
+.frame img {
+  display: none;
+  vertical-align: middle;
+}
+iframe {
+  border: solid 1px #000;
+}
+.widthOnly {
+  height: 580px;
+}
+.widthOnly h2 span {
+  display: none;
+}
+.widthOnly iframe {
+  height: 500px;
+}
