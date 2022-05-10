@@ -1,61 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Responsive Design Testing</title>
-</head>
+  </head>
 
-<body id="container">
+  <body id="container">
     <div id="url">
-        <form method="post">
-            <input type="text" placeholder="Test your own site... type the url and hit enter" />
-            <input type="submit" value="submit">
-            <div id="options">
-                <label for="normal"><input id="normal" type="radio" name="option" value="1" checked>Width
-                    only</label><br />
-                <label for="accurate"><input id="accurate" type="radio" name="option" value="2">Device
-                    sizes</label><br />
-                <label for="scrollbar"><input id="scrollbar" type="checkbox" name="scrollbar" value="1" checked>Visible
-                    Scrollbars</label>
-            </div>
-        </form>
+      <form method="post">
+        <input
+          type="text"
+          placeholder="Test your own site... type the url and hit enter"
+        />
+        <input type="submit" value="submit" />
+        <p>Please note, not all websites will work with this app.</p>
+        <div id="options">
+          <label for="normal"
+            ><input
+              id="normal"
+              type="radio"
+              name="option"
+              value="1"
+              checked
+            />Width only</label
+          ><br />
+          <label for="accurate"
+            ><input id="accurate" type="radio" name="option" value="2" />Device
+            sizes</label
+          ><br />
+          <!-- <label for="scrollbar"><input id="scrollbar" type="checkbox" name="scrollbar" value="1" checked>Visible
+                    Scrollbars</label> -->
+        </div>
+      </form>
     </div>
     <div id="frames" class="widthOnly">
-        <div id="inner">
-            <div id="f2" class="frame">
-                <h2>320 x 480 Regular Phone</h2>
-                <iframe sandbox="allow-same-origin allow-forms allow-scripts" seamless width="335"
-                    height="480"></iframe>
-            </div>
-            <div id="f3" class="frame">
-                <h2>480 x 640 iPads, Tablet</h2>
-                <iframe sandbox="allow-same-origin allow-forms allow-scripts" seamless width="495"
-                    height="640"></iframe>
-            </div>
-            <div id="f4" class="frame">
-                <h2>768 x 1024 Small screens, Laptops</h2>
-                <iframe sandbox="allow-same-origin allow-forms allow-scripts" seamless width="783"
-                    height="1024"></iframe>
-            </div>
-            <div id="f5" class="frame">
-                <h2>1024 x 768 Desktops, Large screens</h2>
-                <iframe sandbox="allow-same-origin allow-forms allow-scripts" seamless width="1039"
-                    height="768"></iframe>
-            </div>
+      <div id="inner">
+        <div id="f2" class="frame">
+          <h2>320 x 480 Regular Phone</h2>
+          <iframe
+            sandbox="allow-same-origin allow-forms allow-scripts"
+            seamless
+            width="335"
+            height="480"
+          ></iframe>
         </div>
+        <div id="f3" class="frame">
+          <h2>480 x 640 iPads, Tablet</h2>
+          <iframe
+            sandbox="allow-same-origin allow-forms allow-scripts"
+            seamless
+            width="495"
+            height="640"
+          ></iframe>
+        </div>
+        <div id="f4" class="frame">
+          <h2>768 x 1024 Small screens, Laptops</h2>
+          <iframe
+            sandbox="allow-same-origin allow-forms allow-scripts"
+            seamless
+            width="783"
+            height="1024"
+          ></iframe>
+        </div>
+        <div id="f5" class="frame">
+          <h2>1024 x 768 Desktops, Large screens</h2>
+          <iframe
+            sandbox="allow-same-origin allow-forms allow-scripts"
+            seamless
+            width="1039"
+            height="768"
+          ></iframe>
+        </div>
+      </div>
     </div>
-    <footer>
-        &#169 2021 - Created by Gary Tate
-    </footer>
-</body>
+    <div class="container-fluid">
+      <footer>
+        <p>
+          Created by Gary Tate &copy;
+          <script>
+            var CurrentYear = new Date().getFullYear();
+            document.write(CurrentYear);
+          </script>
+        </p>
+      </footer>
+    </div>
+  </body>
 
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
-<script src="main.js"></script>
-
-
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+  <script src="main.js"></script>
 </html>

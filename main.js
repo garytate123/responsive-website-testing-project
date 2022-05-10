@@ -1,4 +1,4 @@
-var defaultURL = "https://garytateblog.netlify.app/"; 
+var defaultURL = "https://garytatecv.netlify.app/"; 
 
 //show loading graphic
 function showLoader(id) {
